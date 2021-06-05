@@ -188,7 +188,7 @@ precmd() {
 
     # output command execute after
     # output_command_execute_after $last_cmd_result;
-    echo -e "";
+    # echo -e "";
 }
 
 
