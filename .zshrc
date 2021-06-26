@@ -82,6 +82,14 @@ plugins=(
 # Fix background theme issues (Not necessary depends on your theme)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#6c6c6c"
 
+# Declare the variable
+typeset -A ZSH_HIGHLIGHT_STYLES
+
+# To differentiate aliases from other command types
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=#8C9440,bold'
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#A54242,bold'
+
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
