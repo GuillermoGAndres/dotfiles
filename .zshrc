@@ -89,6 +89,7 @@ typeset -A ZSH_HIGHLIGHT_STYLES
 # To differentiate aliases from other command types
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=#8C9440,bold'
 ZSH_HIGHLIGHT_STYLES[command]='fg=#8C9440,bold'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=#8C9440,bold'
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#A54242,bold'
 
 
