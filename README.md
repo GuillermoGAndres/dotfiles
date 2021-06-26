@@ -5,9 +5,11 @@ Para poner los themas y los plugin, se deben colocar en la carpeta
 ~/.oh-my-zsh/custom/themes/
 ~~~
 Para instalar los plugins: 
+~~~
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+~~~
 
 Instalar el thema 
 ~~~
@@ -16,6 +18,10 @@ cp ~/dotfiles/themes/passion.zsh-theme ~/.oh-my-zsh/custom/themes/
 ## Usando install
 ~~~
 ./install.sh
+~~~
+## Crear un acceso directo a tu init file
+~~~
+ln -s ~/dotfiles/.zshrc .zshrc 
 ~~~
 
 ## Resources

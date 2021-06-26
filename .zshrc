@@ -79,6 +79,7 @@ plugins=(
     history-substring-search
     zsh-syntax-highlighting)
 
+# Fix background theme issues (Not necessary depends on your theme)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#6c6c6c"
 
 source $ZSH/oh-my-zsh.sh
