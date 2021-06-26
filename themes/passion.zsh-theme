@@ -59,7 +59,8 @@ function directory() {
 
 
 # git
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[blue]%}git(%{$fg_no_bold[red]%}";
+# ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[blue]%}git(%{$fg_no_bold[red]%}";
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[blue]%}git(%B%F{1}";
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} ";
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_no_bold[blue]%})";
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_no_bold[blue]%})";
@@ -73,7 +74,7 @@ function git_status() {
 }
 
 
-# command
+# command prompt arrow
 function update_command_status() {
     local arrow="";
     local color_reset="%{$reset_color%}";
@@ -82,9 +83,11 @@ function update_command_status() {
     export COMMAND_RESULT=$COMMAND_RESULT
     if $COMMAND_RESULT;
     then
-        arrow="%{$fg_bold[red]%}❱%{$fg_bold[yellow]%}❱%{$fg_bold[green]%}❱";
+        # arrow="%{$fg_bold[red]%}❱%{$fg_bold[yellow]%}❱%{$fg_bold[green]%}❱";
+        arrow="%B%F{1}❱%f%b%B%F{173}❱%f%b%B%F{64}❱%f%b";
     else
-        arrow="%{$fg_bold[red]%}❱❱❱";
+        #arrow="%{$fg_bold[red]%}❱❱❱";
+        arrow="%B%F{1}❱❱❱%f%b";
     fi
     COMMAND_STATUS="${arrow}${reset_font}${color_reset}";
 }
