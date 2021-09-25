@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=~/scripts-sh:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/guillermo/.oh-my-zsh"
@@ -8,8 +8,15 @@ export ZSH="/home/guillermo/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="passion"
+# ZSH_THEME="passion"
 # ZSH_THEME="robbyrussell"
+# %~ directory or %c
+
+ZSH_THEME="dev"
+# PROMPT='%B%F{107}[%n@%m]%f%F{67}%2~> %f%b'
+#RPROMPT='$(git_prompt_info)'
+# https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -25,10 +32,10 @@ ZSH_THEME="passion"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -118,5 +125,27 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
+alias nviminit="nvim ~/.config/nvim/init.vim"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
+# Con estas banderas es mas rapido el programa
+# alias g++="g++ -pipe -std=c++11"
+alias serve="browser-sync start --server --files ."
+alias nvimdir="cd ~/.config/nvim/"
+alias initFileEmacs="cd ~/.emacs.d/initFileEmacs/"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/guillermo/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/guillermo/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/guillermo/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/guillermo/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
