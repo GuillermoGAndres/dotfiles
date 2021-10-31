@@ -62,7 +62,7 @@ function directory() {
 # ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[blue]%}git(%{$fg_no_bold[red]%}";
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[blue]%}(%B%F{167}";
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} ";
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_no_bold[blue]%})";
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_no_bold[blue]%})%F{229}▪%f";
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_no_bold[blue]%})";
 
 function update_git_status() {
@@ -216,5 +216,5 @@ TRAPALRM() {
 # prompt (colores 108, 138, 137, 152)
 # PROMPT='$(real_time) $(login_info) $(directory) $(git_status)$(command_status) ';
 #PROMPT='$(real_time) $(directory) $(git_status)$(command_status) ';
-PROMPT='%B%F{108}%2~%f%b$(git_status)
-$(command_status) ';
+PROMPT=' %B%F{108}%2~%f%b $(git_status)
+ $(command_status) ';
