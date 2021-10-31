@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=~/scripts-sh:$HOME/bin:/usr/local/bin:$PATH
+export PATH=~/scripts-sh:$HOME/bin:/usr/local/bin:/home/guillermo/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/guillermo/.oh-my-zsh"
@@ -12,7 +12,9 @@ export ZSH="/home/guillermo/.oh-my-zsh"
 # ZSH_THEME="robbyrussell"
 # %~ directory or %c
 
-ZSH_THEME="dev"
+#ZSH_THEME="passion"
+#ZSH_THEME="dev"
+ZSH_THEME="dev2"
 # PROMPT='%B%F{107}[%n@%m]%f%F{67}%2~> %f%b'
 #RPROMPT='$(git_prompt_info)'
 # https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html

@@ -24,6 +24,13 @@ cp ~/dotfiles/themes/passion.zsh-theme ~/.oh-my-zsh/custom/themes/
 ln -s ~/dotfiles/.zshrc .zshrc 
 ~~~
 
+## Enlacer theme 
+Ir al directoria de temas 
+~~~
+> cd ~/.oh-my-zsh/themes
+> ln -s ~/dotfiles/themes/dev.zsh-theme dev.zsh-theme
+~~~
+
 ## Resources
 
 https://zellwk.com/blog/bash-zsh-fish/
