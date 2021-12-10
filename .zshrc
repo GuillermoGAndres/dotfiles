@@ -3,6 +3,8 @@ export PATH=~/scripts-sh:$HOME/bin:/usr/local/bin:/home/guillermo/.local/bin:$PA
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/guillermo/.oh-my-zsh"
+# Julia path 
+export PATH="$PATH:/opt/julia-1.7.0/bin"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -13,8 +15,9 @@ export ZSH="/home/guillermo/.oh-my-zsh"
 # %~ directory or %c
 
 #ZSH_THEME="passion"
-#ZSH_THEME="dev"
-ZSH_THEME="dev2"
+ZSH_THEME="dev"
+#ZSH_THEME="dev2"
+
 # PROMPT='%B%F{107}[%n@%m]%f%F{67}%2~> %f%b'
 #RPROMPT='$(git_prompt_info)'
 # https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html

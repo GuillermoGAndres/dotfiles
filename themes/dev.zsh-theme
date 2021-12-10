@@ -4,7 +4,10 @@
 
 
 # Version 2
-PROMPT='%B%F{107}[%n@%m]%f%F{67}%2~$(git_prompt_info)> %f%b'
+#PROMPT='%B%F{107}[%n@%m]%f%F{67}%2~$(git_prompt_info)> %f%b'
+
+# Version 3 colores del sistema
+PROMPT='%B%F{green}%n@%m:%f%F{blue}%2~$(git_prompt_info)> %f%b'
 
 # git info
 #ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[blue]%}git(%B%F{167}";
